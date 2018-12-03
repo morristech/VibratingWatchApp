@@ -1,0 +1,105 @@
+Journey 1a (programmer est. 8 hours):
+Given there are no timers created nor active timer running/paused,
+When I launch the app,
+Then I see the screen telling me to create a new timer
+
+Journey 1b (est. 8 hours):
+Given I am on the timer creation screen,
+When I set the timer details,
+Then I should have an option to set these vibration patterns: 
+	1 buzz (5 seconds), 3 buzzes (3 seconds each), 5 buzzes (2 seconds each), 1 long buzz (20 seconds) 
+
+Journey 1c (est. 8 hours):
+Given I am on the timer creation screen,
+When I set the timer details,
+Then I should have an option to set how many times the timer repeats and the interval between each repetition
+
+Journey 2 (est. 8 hours):
+Given there is at least one timer created,
+When I launch the app,
+Then I see the screen with a list of created timers
+
+Journey 3 (est. 1 hours):
+Given there is one active timer running or paused,
+When I launch the app,
+Then I see the active timer screen showing running/paused state
+
+Journey 4a (est. 1 hours):
+Given there are multiple active timers running or paused,
+When I launch the app,
+Then I am taken to the screen with timers list, and active timers are highlighted (indicating running/paused states on that list)
+
+Journey 4b (est. 1 hours):
+Given there is an active timer(s) running or paused,
+When I navigate to the screen with a list of created timer(s),
+Then I should see the active timer(s) highlighted on that list
+
+Journey 5 (est. 1 hours):
+Given there is an active timer running or paused,
+When I press Stop button on the active timer screen,
+Then the timer should stop and I am taken to the screen with a list of created timers
+
+Journey 6 (est. 1 hours):
+Given there is an active timer running or paused,
+When I press Pause button on the active timer screen,
+Then the timer progress on that screen should blink to indicate that it is paused
+
+Journey 7 (est. 1 hours):
+Given there is an active timer(s) running or paused,
+When I try to start another timer,
+Then it should start and run simultaneously with the active timer(s) in the background
+
+Journey 8 (est. 1 hours):
+Given that I am on an active timer screen,
+When I swipe left-to-right, 
+Then I should be taken to the screen with a list of created timers
+
+Journey 9 (est. 1 hours):
+Given that I am on the screen with a list of created timers,
+When I click on a timer in the list, 
+Then I should be taken to the screen for that timer
+
+Journey 10a (est. 1 hours):
+Given that I am on the screen with a list of created timers,
+When I long-press on a timer,
+Then that list item should reveal a swipe menu with a delete button
+
+Journey 10b (est. 1 hours):
+Given that I am on the screen with a list of created timers,
+When I try to delete a timer,
+Then a confirmation dialog should appear
+
+Journey 11 (est. 1 hours):
+Given that I am on the screen with a list of created timers,
+When I click on a timer that isn't running/paused,
+Then I see the screen allowing me to modify the timer details, as well as start it
+
+Journey 12a (est. 1 hours):
+Given that a running timer finished its countdown and is vibrating,
+When I press on the Next button,
+Then the timer transitions to the next interval (or stops if it only had one interval)
+
+Journey 12b (est. 1 hours):
+Given that a running timer finished its countdown and is vibrating,
+When I press on any hardware button on the watch,
+Then the timer transitions to the next interval (or stops if it only had one interval)
+
+Journey 12c (est. 1 hours):
+Given that a running timer finished its countdown and is vibrating,
+When I rotate a back/forth wrist gesture three times,
+Then the timer transitions to the next interval (or stops if it only had one interval)
+
+Journey 13 (est. 1 hours):
+Given that I select a timer from the list,
+When I look at that timer's detail screen,
+Then I should see a 'Configure' button that allows me to modify this timer's details
+
+Journey 14a (est. 8 hours):
+Given that I am on the smart watch face screen (watch face),
+When try to add a complication to the watch face,
+Then I get the option to add this Vibrating Watch Timer app
+
+Journey 14b (est. 4 hours):
+Given that I have added a complication for my app,
+When I view the complication,
+Then I see the ongoing timer progress (if there is One ongoing timer), otherwise I just see the shortcut to take me to my timer list
