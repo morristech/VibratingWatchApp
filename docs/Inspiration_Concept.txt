@@ -1,0 +1,11 @@
+Concept Spec:
+
+Everyone needs to take breaks at work.  Research shows that taking a break every hour is good for your BRAIN, as described in this book: NeuroWisdom - https://amzn.to/2xPMfvo.
+I've been using this technique of taking breaks with 1-hour timers on my smartphone.  I came up with a concept for a smartwatch 'Vibrating Timer' app - which solves several shortcomings of using a phone by:
+1) gettting rid of the need to always carry your phone with you and around the office
+2) doesn't disturb your cubicle mates with sounds
+3) you won't worry about phone being on do-not-disturb mode, thus missing a timer
+4) you won't miss the timer when you have sound-blocking headphones on your ears
+5) it won't prevent you from using your phone for more important things (i.e. email, videos, notifications, calendar, etc.)
+
+This watch app will vibrate on a user's wrist (simple, right?).  It is unobtrusive, more accessible, and solves the challenges above.  The vibration pattern can be customized (one buzz, three buzzes, five buzzes, or one very long buzz).  Also, the timer can be set to repeat for any number of intervals, with optional breaks in between.
