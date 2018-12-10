@@ -29,7 +29,7 @@ When I launch the app,
 Then I see the active timer screen showing running/paused state
 [https://marvelapp.com/7iab626/screen/51207930]
 
-Journey 4a (est. 1 hours):
+Journey 4a (est. 4 hours):
 Given there are multiple active timers running or paused,
 When I launch the app,
 Then I am taken to the screen with timers list, and active timers are highlighted (indicating running/paused states on that list)
@@ -74,7 +74,7 @@ When I click on a timer in the list,
 Then I should be taken to the screen for that timer
 [https://marvelapp.com/7iab626/screen/51207939]
 
-Journey 10a (est. 1 hours):
+Journey 10a (est. 4 hours):
 Given that I am on the screen with a list of created timers,
 When I long-press on a timer,
 Then that list item should reveal a swipe menu with a delete button
@@ -92,7 +92,7 @@ When I click on a timer that isn't running/paused,
 Then I see the screen allowing me to modify the timer details, as well as start it
 NOTE - same as cases 9 & 13
 
-Journey 12a (est. 1 hours):
+Journey 12a (est. 4 hours):
 Given that a running timer finished its countdown and is vibrating,
 When I press on the Next button,
 Then the timer transitions to the next interval (or stops if it only had one interval)
@@ -128,3 +128,5 @@ When I view the complication,
 Then I see the ongoing timer progress (if there is One ongoing timer), otherwise I just see the shortcut to take me to my timer list
 [https://marvelapp.com/7iab626/screen/51207939
 NOTE - this shows the timer logo - with a timer in progress]
+
+TOTAL PROGRAMMER ESTIMATE: 68 HOURS
