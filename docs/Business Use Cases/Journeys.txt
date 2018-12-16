@@ -1,132 +1,165 @@
-Journey 1a (programmer est. 8 hours):
+Journey 1a (developer estimate 8 hours):
 Given there are no timers created nor active timer running/paused,
-When I launch the app,
-Then I see the screen telling me to create a new timer
-[https://marvelapp.com/7iab626/screen/51207910]
+When I launch the app
+https://marvelapp.com/7iab626/screen/51207910
 
-Journey 1b (est. 8 hours):
-Given I am on the timer creation screen,
+Then I see the screen telling me to create a new timer
+https://marvelapp.com/7iab626/screen/51207911
+
+Journey 1b (dev est. 8 hours):
+Given I am on the timer creation screen
+https://marvelapp.com/7iab626/screen/51207912
+
 When I set the timer details,
 Then I should have an option to set these vibration patterns: 
 	1 buzz (5 seconds), 3 buzzes (3 seconds each), 5 buzzes (2 seconds each), 1 long buzz (20 seconds) 
-[https://marvelapp.com/7iab626/screen/51207912]
+https://marvelapp.com/7iab626/screen/51207913
 
 Journey 1c (est. 8 hours):
 Given I am on the timer creation screen,
+https://marvelapp.com/7iab626/screen/51207919
+
 When I set the timer details,
 Then I should have an option to set how many times the timer repeats and the interval between each repetition
-[https://marvelapp.com/7iab626/screen/51207919]
+https://marvelapp.com/7iab626/screen/51207926
 
 Journey 2 (est. 8 hours):
 Given there is at least one timer created,
+https://marvelapp.com/7iab626/screen/51207928
+
 When I launch the app,
 Then I see the screen with a list of created timers
-[https://marvelapp.com/7iab626/screen/51207928]
+https://marvelapp.com/7iab626/screen/51207929
 
 Journey 3 (est. 1 hours):
 Given there is one active timer running or paused,
+https://marvelapp.com/7iab626/screen/51207930
+
 When I launch the app,
 Then I see the active timer screen showing running/paused state
-[https://marvelapp.com/7iab626/screen/51207930]
+https://marvelapp.com/7iab626/screen/51207932
 
-Journey 4a (est. 4 hours):
+Journey 4a (est. 1 hours):
 Given there are multiple active timers running or paused,
+https://marvelapp.com/7iab626/screen/51207933
+
 When I launch the app,
 Then I am taken to the screen with timers list, and active timers are highlighted (indicating running/paused states on that list)
-[https://marvelapp.com/7iab626/screen/51207933
-NOTE - this is the same as Case 2]
+https://marvelapp.com/7iab626/screen/51207934
+NOTE - this is the same UI as Case 2
 
 Journey 4b (est. 1 hours):
 Given there is an active timer(s) running or paused,
+https://marvelapp.com/7iab626/screen/51207935
+
 When I navigate to the screen with a list of created timer(s),
 Then I should see the active timer(s) highlighted on that list
-[https://marvelapp.com/7iab626/screen/51207935
-NOTE - This would be a swipe to the right]
+https://marvelapp.com/7iab626/screen/51207937
+NOTE - This would be a swipe to the right
 
 Journey 5 (est. 1 hours):
 Given there is an active timer running or paused,
 When I press Stop button on the active timer screen,
 Then the timer should stop and I am taken to the screen with a list of created timers
+NOTE - this is the same UI as Case 4B
 
 Journey 6 (est. 1 hours):
 Given there is an active timer running or paused,
+https://marvelapp.com/7iab626/screen/51207939
+
 When I press Pause button on the active timer screen,
 Then the timer progress on that screen should blink to indicate that it is paused
-[https://marvelapp.com/7iab626/screen/51207939
-NOTE - Can’t do the ‘blinking’ effect on MarvelApp]
+https://marvelapp.com/7iab626/screen/51207940
+NOTE - ‘blinking’ effect isn't shown in MarvelApp
 
 Journey 7 (est. 1 hours):
 Given there is an active timer(s) running or paused,
+https://marvelapp.com/7iab626/screen/51207941
+
 When I try to start another timer,
+https://marvelapp.com/7iab626/screen/51207942
+
 Then it should start and run simultaneously with the active timer(s) in the background
-[https://marvelapp.com/7iab626/screen/51207939
-Then press ‘play’ on 2nd item: https://marvelapp.com/7iab626/screen/51207939]
+https://marvelapp.com/7iab626/screen/51207943
 
 Journey 8 (est. 1 hours):
 Given that I am on an active timer screen,
+https://marvelapp.com/7iab626/screen/51207946
+
 When I swipe left-to-right, 
 Then I should be taken to the screen with a list of created timers
-[https://marvelapp.com/7iab626/screen/51207939]
+https://marvelapp.com/7iab626/screen/51207948
 
 Journey 9 (est. 1 hours):
 Given that I am on the screen with a list of created timers,
+https://marvelapp.com/7iab626/screen/51207950
 When I click on a timer in the list, 
 Then I should be taken to the screen for that timer
-[https://marvelapp.com/7iab626/screen/51207939]
+https://marvelapp.com/7iab626/screen/51207951
 
-Journey 10a (est. 4 hours):
+Journey 10a (est. 1 hours):
 Given that I am on the screen with a list of created timers,
+https://marvelapp.com/7iab626/screen/51207952
 When I long-press on a timer,
 Then that list item should reveal a swipe menu with a delete button
-[https://marvelapp.com/7iab626/screen/51207939]
+https://marvelapp.com/7iab626/screen/51207953
 
 Journey 10b (est. 1 hours):
 Given that I am on the screen with a list of created timers,
 When I try to delete a timer,
 Then a confirmation dialog should appear
-NOTE - same as 10A above - just click on the delete
+https://marvelapp.com/7iab626/screen/51207954
+NOTE - same UI as 10A above - just click on the delete
 
 Journey 11 (est. 1 hours):
 Given that I am on the screen with a list of created timers,
 When I click on a timer that isn't running/paused,
 Then I see the screen allowing me to modify the timer details, as well as start it
-NOTE - same as cases 9 & 13
+NOTE - same as cases 9 & 13 ?
 
-Journey 12a (est. 4 hours):
+Journey 12a (est. 1 hours):
 Given that a running timer finished its countdown and is vibrating,
+https://marvelapp.com/7iab626/screen/51207955
+
 When I press on the Next button,
 Then the timer transitions to the next interval (or stops if it only had one interval)
-[https://marvelapp.com/7iab626/screen/51207939]
+https://marvelapp.com/7iab626/screen/51207956
 
 Journey 12b (est. 1 hours):
 Given that a running timer finished its countdown and is vibrating,
+https://marvelapp.com/7iab626/screen/51207957
+
 When I press on any hardware button on the watch,
 Then the timer transitions to the next interval (or stops if it only had one interval)
-[https://marvelapp.com/7iab626/screen/51207939]
+https://marvelapp.com/7iab626/screen/51207958
 
 Journey 12c (est. 1 hours):
 Given that a running timer finished its countdown and is vibrating,
 When I rotate a back/forth wrist gesture three times,
 Then the timer transitions to the next interval (or stops if it only had one interval)
+NOTE - this is a gesture I can ‘do’ in MarvelApp
 
 Journey 13 (est. 1 hours):
 Given that I select a timer from the list,
 When I look at that timer's detail screen,
 Then I should see a 'Configure' button that allows me to modify this timer's details
-[NOTE - same as cases 9 & 11]
+NOTE - same as cases 9 & 11
 
 Journey 14a (est. 8 hours):
 Given that I am on the smart watch face screen (watch face),
+https://marvelapp.com/7iab626/screen/51207961
+
 When try to add a complication to the watch face,
 Then I get the option to add this Vibrating Watch Timer app
-[https://marvelapp.com/7iab626/screen/51207939
-Click the Timer logo in 2nd screen to add it to the watch face]
+https://marvelapp.com/7iab626/screen/51208291
+https://marvelapp.com/7iab626/screen/51208294
+
+Click the Timer logo in 2nd screen to add it to the watch face
 
 Journey 14b (est. 4 hours):
 Given that I have added a complication for my app,
 When I view the complication,
 Then I see the ongoing timer progress (if there is One ongoing timer), otherwise I just see the shortcut to take me to my timer list
-[https://marvelapp.com/7iab626/screen/51207939
-NOTE - this shows the timer logo - with a timer in progress]
+https://marvelapp.com/7iab626/screen/51207964
+NOTE - this shows the timer logo - with a timer in progress
 
-TOTAL PROGRAMMER ESTIMATE: 68 HOURS
