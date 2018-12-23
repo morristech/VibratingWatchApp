@@ -54,7 +54,7 @@ https://marvelapp.com/7iab626/screen/51207943
 
 -----------------------------------------------------------------------
 
-Journey 10a (est. 4 hours):
+Journey 10a (est. 8 hours):
 Given that I am on the screen with a list of created timers,
 https://marvelapp.com/7iab626/screen/51207952
 When I long-press on a timer,
@@ -65,7 +65,7 @@ https://marvelapp.com/7iab626/screen/51207953
 
 -----------------------------------------------------------------------
 
-Journey 10b (est. 5 hours):
+Journey 10b (est. 8 hours):
 Given that I am on the screen with a list of created timers,
 When I try to delete a timer,
 Then a confirmation dialog should appear
