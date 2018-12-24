@@ -11,6 +11,16 @@ https://marvelapp.com/7iab626/screen/51207913
 
 -----------------------------------------------------------------------
 
+Journey 1c (est. 8 hours):
+Given I am on the timer creation screen,
+https://marvelapp.com/7iab626/screen/51207919
+
+When I set the timer details,
+Then I should have an option to set the interval between each repetition
+https://marvelapp.com/7iab626/screen/51207926
+
+-----------------------------------------------------------------------
+
 Journey 4a (est. 8 hours):
 Given there are multiple active timers running or paused,
 https://marvelapp.com/7iab626/screen/51207933

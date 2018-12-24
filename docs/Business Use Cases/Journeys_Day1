@@ -28,7 +28,7 @@ Given I am on the timer creation screen,
 https://marvelapp.com/7iab626/screen/51207919
 
 When I set the timer details,
-Then I should have an option to set how many times the timer repeats and the interval between each repetition
+Then I should have an option to set how many times the timer repeats
 https://marvelapp.com/7iab626/screen/51207926
 
 **Day 1 release
