@@ -11,7 +11,7 @@ https://marvelapp.com/7iab626/screen/51207911
 -----------------------------------------------------------------------
 
 ###### Journey 1b (dev est. 16 hours):
-Given I am on the timer creation screen
+Given I am on the next timer creation screen (swipe right-to-left)
 https://marvelapp.com/7iab626/screen/51207912
 
 When I set the timer details,
@@ -24,7 +24,7 @@ NOTE - user sets timer details with standard Android time picker
 -----------------------------------------------------------------------
 
 ###### Journey 1c (est. 8 hours):
-Given I am on the timer creation screen,
+Given I am on the next timer creation screen (swipe right-to-left),
 https://marvelapp.com/7iab626/screen/51207919
 
 When I set the timer details,
