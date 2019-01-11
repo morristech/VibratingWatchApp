@@ -1,0 +1,4 @@
+* linguist-vendored
+*.kt linguist-language=Kotlin
+docs/* linguist-documentation
+buildmachine/* linguist-detectable=false
