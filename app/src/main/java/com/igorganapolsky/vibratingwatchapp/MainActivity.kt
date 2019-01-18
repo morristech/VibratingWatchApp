@@ -6,6 +6,9 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.wear.ambient.AmbientModeSupport
 
+/**
+ * Launcher activity for the timer app.
+ */
 class MainActivity : AppCompatActivity(), AmbientModeSupport.AmbientCallbackProvider {
 
     private lateinit var mAmbientController: AmbientModeSupport.AmbientController

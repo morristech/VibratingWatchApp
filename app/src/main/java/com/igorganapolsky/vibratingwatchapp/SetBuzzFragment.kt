@@ -1,13 +1,13 @@
 package com.igorganapolsky.vibratingwatchapp
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 
 /**
- * Creates a SetBuzzFragment that allows setting buzz for a timer
+ * Creates a Fragment that allows setting buzz for a timer.
  */
 class SetBuzzFragment : Fragment() {
 

@@ -5,9 +5,9 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 
 /**
- * Creates an CreateTimerFragmentAdaptor object that controls changing fragments for creating new time
+ * Creates an [FragmentPagerAdapter] that controls changing fragments when creating a new timer.
  */
-class CreateTimerFragmentAdaptor(fm: FragmentManager) : FragmentPagerAdapter(fm) {
+class CreateTimerFragmentAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
     override fun getCount(): Int {
         return 3

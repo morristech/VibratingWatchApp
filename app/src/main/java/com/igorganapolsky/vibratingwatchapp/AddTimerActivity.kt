@@ -6,10 +6,13 @@ import androidx.viewpager.widget.ViewPager
 import androidx.wear.ambient.AmbientModeSupport
 import com.google.android.material.tabs.TabLayout
 
+/**
+ * Activity that allows to create a new timer.
+ */
 class AddTimerActivity : AppCompatActivity(), AmbientModeSupport.AmbientCallbackProvider  {
 
     private lateinit var mAmbientController: AmbientModeSupport.AmbientController
-    private var mAdapter: CreateTimerFragmentAdaptor? = null
+    private var mAdapter: CreateTimerFragmentAdapter? = null
     private lateinit var mPager: ViewPager
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +21,7 @@ class AddTimerActivity : AppCompatActivity(), AmbientModeSupport.AmbientCallback
 
         mAmbientController = AmbientModeSupport.attach(this)
 
-        mAdapter =  CreateTimerFragmentAdaptor(supportFragmentManager)
+        mAdapter =  CreateTimerFragmentAdapter(supportFragmentManager)
         mPager = findViewById(R.id.pager)
         mPager.adapter = mAdapter
 

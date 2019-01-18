@@ -1,50 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.wear.widget.BoxInsetLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/background_gradient"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    tools:deviceIds="wear"
-    boxedEdges="all"
-    android:padding="@dimen/box_inset_layout_padding"
-    android:layout_gravity="center_horizontal|center_vertical">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/background_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:deviceIds="wear"
+        app:boxedEdges="all"
+        android:padding="@dimen/box_inset_layout_padding"
+        android:layout_gravity="center_horizontal|center_vertical">
 
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                 xmlns:tools="http://schemas.android.com/tools"
-                 android:layout_width="match_parent"
-                 android:layout_height="match_parent"
-                 tools:context=".AddTimerFragment"
-                 android:id="@+id/addTimer">
-        <LinearLayout
-            android:orientation="vertical"
+    <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center_horizontal|top">
+            tools:context=".AddTimerFragment"
+            android:id="@+id/addTimer">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|top">
             <ImageView
-                android:src="@drawable/ic_timer"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:id="@+id/imageView"
-                android:layout_marginTop="20dp"
-                android:background="@null"/>
+                    android:src="@drawable/ic_timer"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/imageView"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"/>
             <ImageButton
-                android:src="@drawable/ic_plus"
-                android:background="@null"
-                android:layout_height="40dp"
-                android:id="@+id/addTimerButton"
-                android:layout_width="40dp"
-                android:scaleType="centerInside"
-                android:layout_margin="15dp"
-                android:onClick="addTimer"/>
+                    android:src="@drawable/ic_plus"
+                    android:background="@null"
+                    android:layout_height="40dp"
+                    android:id="@+id/addTimerButton"
+                    android:layout_width="40dp"
+                    android:scaleType="centerInside"
+                    android:layout_margin="15dp"
+                    android:onClick="addTimer"/>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Add timer"
-                android:fontFamily="@font/roboto_condensed_regular"
-                android:textColor="@color/white"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add timer"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:textColor="@color/white"/>
         </LinearLayout>
 
     </FrameLayout>

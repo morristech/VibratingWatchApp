@@ -1,14 +1,14 @@
 package com.igorganapolsky.vibratingwatchapp
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.NumberPicker
+import androidx.fragment.app.Fragment
 
 /**
- * Creates a Fragment that allows setting the time for a timer
+ * Creates a Fragment that allows setting the time for a timer.
  */
 class SetTimeFragment : Fragment() {
 
@@ -24,7 +24,7 @@ class SetTimeFragment : Fragment() {
         return rootView
     }
 
-    private fun setupTimePicker(){
+    private fun setupTimePicker() {
         val hoursPicker = rootView.findViewById<View>(R.id.hoursPicker) as NumberPicker
         hoursPicker.minValue = 0
         hoursPicker.maxValue = 12
