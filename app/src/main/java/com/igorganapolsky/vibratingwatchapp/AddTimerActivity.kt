@@ -1,23 +1,33 @@
 package com.igorganapolsky.vibratingwatchapp
 
-import android.content.Intent
-import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import androidx.viewpager.widget.ViewPager
 import androidx.wear.ambient.AmbientModeSupport
+import com.google.android.material.tabs.TabLayout
 
-class MainActivity : AppCompatActivity(), AmbientModeSupport.AmbientCallbackProvider {
+class AddTimerActivity : AppCompatActivity(), AmbientModeSupport.AmbientCallbackProvider  {
 
     private lateinit var mAmbientController: AmbientModeSupport.AmbientController
+    private var mAdapter: CreateTimerFragmentAdaptor? = null
+    private lateinit var mPager: ViewPager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_add_timer)
 
         mAmbientController = AmbientModeSupport.attach(this)
+
+        mAdapter =  CreateTimerFragmentAdaptor(supportFragmentManager)
+        mPager = findViewById(R.id.pager)
+        mPager.adapter = mAdapter
+
+        val tabLayout = findViewById<TabLayout>(R.id.tabDots)
+        tabLayout.setupWithViewPager(mPager, true)
     }
 
     override fun getAmbientCallback(): AmbientModeSupport.AmbientCallback = MyAmbientCallback()
+
 
     private class MyAmbientCallback : AmbientModeSupport.AmbientCallback() {
 
@@ -31,9 +41,7 @@ class MainActivity : AppCompatActivity(), AmbientModeSupport.AmbientCallbackProv
         }
     }
 
-    fun addTimer(view: View){
-        val intent = Intent(this, AddTimerActivity::class.java)
-        startActivity(intent)
+    fun setCurrentItem(item: Int, smoothScroll: Boolean) {
+        mPager.setCurrentItem(item, smoothScroll)
     }
-
 }

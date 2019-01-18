@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 
 /**
- * Returns an SetBuzzFragment object
+ * Creates a SetBuzzFragment that allows setting buzz for a timer
  */
 class SetBuzzFragment : Fragment() {
 

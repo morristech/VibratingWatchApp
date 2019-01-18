@@ -8,11 +8,11 @@ import android.view.ViewGroup
 import android.widget.NumberPicker
 
 /**
- * Returns an SetTimeFragment object
+ * Creates a Fragment that allows setting the time for a timer
  */
 class SetTimeFragment : Fragment() {
 
-    lateinit var rootView: View
+    private lateinit var rootView: View
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,9 +25,13 @@ class SetTimeFragment : Fragment() {
     }
 
     private fun setupTimePicker(){
+        val hoursPicker = rootView.findViewById<View>(R.id.hoursPicker) as NumberPicker
+        hoursPicker.minValue = 0
+        hoursPicker.maxValue = 12
+
         val minutesPicker = rootView.findViewById<View>(R.id.minutesPicker) as NumberPicker
         minutesPicker.minValue = 0
-        minutesPicker.maxValue = 99
+        minutesPicker.maxValue = 60
 
         val secondsPicker = rootView.findViewById<View>(R.id.secondsPicker) as NumberPicker
         secondsPicker.minValue = 0
