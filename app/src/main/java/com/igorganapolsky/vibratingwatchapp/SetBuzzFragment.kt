@@ -7,16 +7,16 @@ import android.view.View
 import android.view.ViewGroup
 
 /**
- * Returns an AddTimerFragment object
+ * Returns an SetBuzzFragment object
  */
-class AddTimerFragment : Fragment() {
+class SetBuzzFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
-        return inflater.inflate(R.layout.fragment_add_timer, container, false)
+        return inflater.inflate(R.layout.fragment_set_buzz, container, false)
     }
+
 
 }

@@ -1,18 +1,17 @@
 package com.igorganapolsky.vibratingwatchapp
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import androidx.viewpager.widget.ViewPager
 import androidx.wear.ambient.AmbientModeSupport
 import com.google.android.material.tabs.TabLayout
-import androidx.fragment.app.FragmentPagerAdapter
 
 class MainActivity : AppCompatActivity(), AmbientModeSupport.AmbientCallbackProvider {
 
     private lateinit var mAmbientController: AmbientModeSupport.AmbientController
-    var mAdapter: MyAdapter? = null
+    private var mAdapter: CreateTimerFragmentAdaptor? = null
+    private lateinit var mPager: ViewPager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,9 +19,9 @@ class MainActivity : AppCompatActivity(), AmbientModeSupport.AmbientCallbackProv
 
         mAmbientController = AmbientModeSupport.attach(this)
 
-        mAdapter =  MyAdapter(supportFragmentManager)
-        val mPager = findViewById<ViewPager>(R.id.pager)
-        mPager.adapter = mAdapter;
+        mAdapter =  CreateTimerFragmentAdaptor(supportFragmentManager)
+        mPager = findViewById(R.id.pager)
+        mPager.adapter = mAdapter
 
         val tabLayout = findViewById<TabLayout>(R.id.tabDots)
         tabLayout.setupWithViewPager(mPager, true)
@@ -43,15 +42,12 @@ class MainActivity : AppCompatActivity(), AmbientModeSupport.AmbientCallbackProv
         }
     }
 
-    class MyAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
-        override fun getCount(): Int {
-            return 4
-        }
+    fun addTimer(view: View){
+        this.setCurrentItem(1, true)
+    }
 
-        override fun getItem(position: Int): Fragment {
-
-            return AddTimerFragment()
-        }
+    fun setCurrentItem(item: Int, smoothScroll: Boolean) {
+        mPager.setCurrentItem(item, smoothScroll)
     }
 }
