@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.SetBuzzFragment">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal" android:padding="0dp">
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="00 : 00 : 00"
+          android:id="@+id/tvTime"
+          android:textColor="@color/white"
+          android:textSize="22sp"
+          android:fontFamily="@font/roboto_condensed_regular"
+          android:layout_marginTop="10dp"/>
+        <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fadeScrollbars="false"
+          android:isScrollContainer="false"
+          android:overScrollMode="always"
+          android:scrollIndicators="none"
+          android:scrollbarSize="0dp" android:layout_margin="5dp">
+            <ImageView
+              android:src="@drawable/ic_repeat"
+              android:layout_width="20dp"
+              android:layout_height="wrap_content"
+              android:id="@+id/imageView2"
+              android:layout_marginRight="5dp"/>
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/set_repeat"
+              android:textColor="@color/white"
+              android:fontFamily="@font/roboto_condensed_regular"/>
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+          android:layout_marginTop="20dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/repeat_picker"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              android:fadingEdgeLength="10dp"
+              android:clipToPadding="false" android:paddingLeft="50dp" android:paddingRight="50dp"/>
+
+            <ImageView
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              android:alpha="0.2"
+              android:background="@drawable/border_circle_drawable"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageButton
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          app:srcCompat="@drawable/ic_check"
+          android:background="@drawable/fill_circle_drawable"
+          android:id="@+id/confirmBtn"
+          android:backgroundTint="@color/white"
+          android:tint="@color/burgundy" android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,10 +1,11 @@
-package com.igorganapolsky.vibratingwatchapp
+package com.igorganapolsky.vibratingwatchapp.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.wear.ambient.AmbientModeSupport
+import com.igorganapolsky.vibratingwatchapp.R
 
 class MainActivity : AppCompatActivity(), AmbientModeSupport.AmbientCallbackProvider {
 
@@ -17,7 +18,8 @@ class MainActivity : AppCompatActivity(), AmbientModeSupport.AmbientCallbackProv
         mAmbientController = AmbientModeSupport.attach(this)
     }
 
-    override fun getAmbientCallback(): AmbientModeSupport.AmbientCallback = MyAmbientCallback()
+    override fun getAmbientCallback(): AmbientModeSupport.AmbientCallback =
+        MyAmbientCallback()
 
     private class MyAmbientCallback : AmbientModeSupport.AmbientCallback() {
 

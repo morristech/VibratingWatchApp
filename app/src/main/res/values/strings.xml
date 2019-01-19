@@ -10,5 +10,6 @@
   <string name="buzz3_description">- 2 seconds each</string>
   <string name="buzz4">1 long buzz</string>
   <string name="buzz4_description">- 20 seconds</string>
+  <string name="set_repeat">Set repeat</string>
 
 </resources>

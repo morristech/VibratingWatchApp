@@ -6,35 +6,36 @@
     android:background="@drawable/background_gradient"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddTimerActivity"
+    tools:context=".activities.AddTimerActivity"
     tools:deviceIds="wear"
     boxedEdges="all"
     android:padding="@dimen/box_inset_layout_padding"
     android:layout_gravity="center_horizontal|center_vertical">
 
   <FrameLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:padding="@dimen/inner_frame_layout_padding">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
 
       <androidx.viewpager.widget.ViewPager
-          android:id="@+id/pager"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"/>
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
       <com.google.android.material.tabs.TabLayout
-          android:id="@+id/tabDots"
-          android:layout_alignParentBottom="true"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          app:tabBackground="@drawable/tab_selector"
-          app:tabGravity="center"
-          app:tabIndicatorHeight="0dp"
-          app:tabPaddingStart="5dp"
-          app:tabPaddingEnd="5dp"/>
+        android:id="@+id/tabDots"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabGravity="center"
+        app:tabRippleColor="@null"
+        app:tabIndicatorHeight="0dp"
+        app:tabPaddingStart="5dp"
+        app:tabPaddingEnd="5dp"/>
 
     </RelativeLayout>
   </FrameLayout>

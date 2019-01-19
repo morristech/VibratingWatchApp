@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:background="@drawable/background_gradient"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".activities.TimersListActivity"
+tools:deviceIds="wear"
+boxedEdges="all"
+android:padding="@dimen/box_inset_layout_padding"
+android:layout_gravity="center_horizontal|center_vertical">
+
+<!--<FrameLayout-->
+  <!--android:layout_width="match_parent"-->
+             <!--android:layout_height="match_parent"-->
+             <!--tools:context=".AddTimerFragment"-->
+             <!--android:id="@+id/addTimer">-->
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+    <ImageView
+      android:src="@drawable/ic_timer"
+      android:layout_width="45dp"
+      android:layout_height="45dp"
+      android:id="@+id/imageView"
+      android:layout_marginTop="20dp"
+      android:background="@null"
+      android:layout_marginBottom="10dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:clipToPadding="false"
+      android:paddingBottom="70dp"
+      android:id="@+id/timers_list_recycle_view">
+
+    </androidx.recyclerview.widget.RecyclerView>
+  </LinearLayout>
+
+<!--</FrameLayout>-->
+</androidx.wear.widget.BoxInsetLayout>

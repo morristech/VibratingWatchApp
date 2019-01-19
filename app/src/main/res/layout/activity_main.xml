@@ -6,18 +6,12 @@
     android:background="@drawable/background_gradient"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".activities.MainActivity"
     tools:deviceIds="wear"
     boxedEdges="all"
     android:padding="@dimen/box_inset_layout_padding"
     android:layout_gravity="center_horizontal|center_vertical">
 
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                 xmlns:tools="http://schemas.android.com/tools"
-                 android:layout_width="match_parent"
-                 android:layout_height="match_parent"
-                 tools:context=".AddTimerFragment"
-                 android:id="@+id/addTimer">
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -47,5 +41,4 @@
                 android:textColor="@color/white"/>
         </LinearLayout>
 
-    </FrameLayout>
 </androidx.wear.widget.BoxInsetLayout>
