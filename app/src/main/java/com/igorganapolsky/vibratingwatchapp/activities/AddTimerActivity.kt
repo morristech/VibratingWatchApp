@@ -1,17 +1,18 @@
-package com.igorganapolsky.vibratingwatchapp.activities
+package com.igorganapolsky.vibratingwatchapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.viewpager.widget.ViewPager
 import androidx.wear.ambient.AmbientModeSupport
 import com.google.android.material.tabs.TabLayout
-import com.igorganapolsky.vibratingwatchapp.R
-import com.igorganapolsky.vibratingwatchapp.adapters.CreateTimerFragmentAdaptor
 
-class AddTimerActivity : AppCompatActivity(), AmbientModeSupport.AmbientCallbackProvider {
+/**
+ * Activity that allows to create a new timer.
+ */
+class AddTimerActivity : AppCompatActivity(), AmbientModeSupport.AmbientCallbackProvider  {
 
     private lateinit var mAmbientController: AmbientModeSupport.AmbientController
-    private var mAdapter: CreateTimerFragmentAdaptor? = null
+    private var mAdapter: CreateTimerFragmentAdapter? = null
     private lateinit var mPager: ViewPager
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +21,7 @@ class AddTimerActivity : AppCompatActivity(), AmbientModeSupport.AmbientCallback
 
         mAmbientController = AmbientModeSupport.attach(this)
 
-        mAdapter = CreateTimerFragmentAdaptor(supportFragmentManager)
+        mAdapter =  CreateTimerFragmentAdapter(supportFragmentManager)
         mPager = findViewById(R.id.pager)
         mPager.adapter = mAdapter
 
@@ -28,8 +29,7 @@ class AddTimerActivity : AppCompatActivity(), AmbientModeSupport.AmbientCallback
         tabLayout.setupWithViewPager(mPager, true)
     }
 
-    override fun getAmbientCallback(): AmbientModeSupport.AmbientCallback =
-        MyAmbientCallback()
+    override fun getAmbientCallback(): AmbientModeSupport.AmbientCallback = MyAmbientCallback()
 
 
     private class MyAmbientCallback : AmbientModeSupport.AmbientCallback() {
