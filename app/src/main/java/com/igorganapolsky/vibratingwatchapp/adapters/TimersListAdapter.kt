@@ -9,6 +9,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.igorganapolsky.vibratingwatchapp.R
 import org.w3c.dom.Text
 
+/**
+ * Creates RecyclerView.Adapter for TimersListActivity recycle view
+ */
 class TimersListAdapter(private val myDataset: Array<String>) :
     RecyclerView.Adapter<TimersListAdapter.TimersListViewHolder>() {
 
@@ -29,7 +32,7 @@ class TimersListAdapter(private val myDataset: Array<String>) :
     }
 
     // Return the size of your dataset (invoked by the layout manager)
-    override fun getItemCount() = 5
+    override fun getItemCount() = 1
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
@@ -37,11 +40,6 @@ class TimersListAdapter(private val myDataset: Array<String>) :
     // Each data item is just a string in this case that is shown in a TextView.
     class TimersListViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val vTime = view.findViewById(R.id.time) as TextView
-
-//
-//        init {
-////            vTime = (TextView) view.findViewById(R.id.selectSwitch);
-//        }
     }
 
 }

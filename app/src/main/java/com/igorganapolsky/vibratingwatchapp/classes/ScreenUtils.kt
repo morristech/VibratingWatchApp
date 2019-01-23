@@ -1,4 +1,4 @@
-package com.example.nbtk.slider
+package com.igorganapolsky.vibratingwatchapp.classes
 
 import android.content.Context
 import android.util.DisplayMetrics
@@ -14,13 +14,6 @@ class ScreenUtils {
             val dm = DisplayMetrics()
             windowManager.defaultDisplay.getMetrics(dm)
             return dm.widthPixels
-        }
-
-        fun getScreenHeight(context: Context): Int {
-            val windowManager = context.getSystemService(Context.WINDOW_SERVICE) as WindowManager
-            val dm = DisplayMetrics()
-            windowManager.defaultDisplay.getMetrics(dm)
-            return dm.heightPixels
         }
 
         fun dpToPx(context: Context, value: Int) : Int {

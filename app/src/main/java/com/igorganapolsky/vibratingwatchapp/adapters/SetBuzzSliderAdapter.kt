@@ -7,6 +7,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import com.igorganapolsky.vibratingwatchapp.R
 
+/**
+ * Creates RecyclerView.Adapter for SetBuzzFragment recycle view
+ */
 class SetBuzzSliderAdapter : RecyclerView.Adapter<SetBuzzSliderItemViewHolder>() {
 
     private val data: ArrayList<String> = ArrayList()

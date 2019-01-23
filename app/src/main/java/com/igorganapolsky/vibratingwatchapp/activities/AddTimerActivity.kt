@@ -8,6 +8,9 @@ import com.google.android.material.tabs.TabLayout
 import com.igorganapolsky.vibratingwatchapp.R
 import com.igorganapolsky.vibratingwatchapp.adapters.CreateTimerFragmentAdaptor
 
+/**
+ * Creates a AddTimerActivity that allows adding new timer
+ */
 class AddTimerActivity : AppCompatActivity(), AmbientModeSupport.AmbientCallbackProvider {
 
     private lateinit var mAmbientController: AmbientModeSupport.AmbientController

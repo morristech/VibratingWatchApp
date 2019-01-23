@@ -18,7 +18,7 @@ class TimersListActivity : AppCompatActivity() {
         setContentView(R.layout.activity_timers_list)
 
         viewManager = LinearLayoutManager(this)
-        viewAdapter = TimersListAdapter(arrayOf("20:00:00", "00:20:00", "00:00:20", "00:00:00", "00:00:00", "00:00:00", "00:00:00", "00:00:00", "00:00:00", "00:00:00", "00:00:00"))
+        viewAdapter = TimersListAdapter(arrayOf("00:00:00"))
 
         recyclerView = findViewById<RecyclerView>(R.id.timers_list_recycle_view).apply {
             setHasFixedSize(true)

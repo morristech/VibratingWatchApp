@@ -8,15 +8,10 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context=".activities.TimersListActivity"
 tools:deviceIds="wear"
-boxedEdges="all"
+app:boxedEdges="all"
 android:padding="@dimen/box_inset_layout_padding"
 android:layout_gravity="center_horizontal|center_vertical">
 
-<!--<FrameLayout-->
-  <!--android:layout_width="match_parent"-->
-             <!--android:layout_height="match_parent"-->
-             <!--tools:context=".AddTimerFragment"-->
-             <!--android:id="@+id/addTimer">-->
   <LinearLayout
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -40,5 +35,4 @@ android:layout_gravity="center_horizontal|center_vertical">
     </androidx.recyclerview.widget.RecyclerView>
   </LinearLayout>
 
-<!--</FrameLayout>-->
 </androidx.wear.widget.BoxInsetLayout>

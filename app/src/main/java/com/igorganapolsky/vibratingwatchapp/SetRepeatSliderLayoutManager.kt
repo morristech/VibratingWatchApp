@@ -5,6 +5,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 
+/**
+ * Creates LinearLayoutManager for SetPicker recycle view
+ */
 class SetRepeatSliderLayoutManager(context: Context?) : LinearLayoutManager(context) {
 
     init {
@@ -46,7 +49,7 @@ class SetRepeatSliderLayoutManager(context: Context?) : LinearLayoutManager(cont
             for (i in 0 until recyclerView.childCount) {
                 val child = recyclerView.getChildAt(i)
                 val childCenterX = getDecoratedLeft(child) + (getDecoratedRight(child) - getDecoratedLeft(child)) / 2
-                var newDistance = Math.abs(childCenterX - recyclerViewCenterX)
+                val newDistance = Math.abs(childCenterX - recyclerViewCenterX)
                 if (newDistance < minDistance) {
                     minDistance = newDistance
                     position = recyclerView.getChildLayoutPosition(child)

@@ -7,9 +7,12 @@ import android.view.ViewGroup
 import android.widget.TextView
 import com.igorganapolsky.vibratingwatchapp.R
 
+/**
+ * Creates RecyclerView.Adapter for SetRepeatFragment recycle view
+ */
 class SetRepeatSliderAdapter : RecyclerView.Adapter<SetRepeatSliderItemViewHolder>() {
 
-    private val data: ArrayList<String> = ArrayList();
+    private val data: ArrayList<String> = ArrayList()
     var callback: Callback? = null
     private val clickListener = View.OnClickListener { v -> v?.let { callback?.onItemClicked(it) } }
 
@@ -42,5 +45,5 @@ class SetRepeatSliderAdapter : RecyclerView.Adapter<SetRepeatSliderItemViewHolde
 
 class SetRepeatSliderItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-    val tvItem: TextView? = itemView?.findViewById(R.id.repeat)
+    val tvItem: TextView? = itemView.findViewById(R.id.repeat)
 }

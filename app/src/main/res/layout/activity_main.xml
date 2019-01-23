@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     tools:context=".activities.MainActivity"
     tools:deviceIds="wear"
-    boxedEdges="all"
+    app:boxedEdges="all"
     android:padding="@dimen/box_inset_layout_padding"
     android:layout_gravity="center_horizontal|center_vertical">
 

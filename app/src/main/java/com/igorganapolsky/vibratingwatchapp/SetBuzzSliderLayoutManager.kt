@@ -8,6 +8,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 
+/**
+ * Creates LinearLayoutManager for SetBuzz recycle view
+ */
 class SetBuzzSliderLayoutManager(context: Context?) : LinearLayoutManager(context) {
 
     init {

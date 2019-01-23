@@ -11,5 +11,8 @@
   <string name="buzz4">1 long buzz</string>
   <string name="buzz4_description">- 20 seconds</string>
   <string name="set_repeat">Set repeat</string>
+  <string name="time00">00 : 00 : 00</string>
+  <string name="time">%1$ : %2$ : %3$</string>
+
 
 </resources>

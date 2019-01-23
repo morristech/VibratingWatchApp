@@ -1,10 +1,7 @@
 package com.igorganapolsky.vibratingwatchapp.fragments
 
 import android.content.Context
-import android.content.res.Resources
-import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -12,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.RecyclerView
-import com.example.nbtk.slider.ScreenUtils
+import com.igorganapolsky.vibratingwatchapp.classes.ScreenUtils
 import com.igorganapolsky.vibratingwatchapp.R
 import com.igorganapolsky.vibratingwatchapp.SetBuzzSliderLayoutManager
 import com.igorganapolsky.vibratingwatchapp.adapters.SetBuzzSliderAdapter
@@ -20,7 +17,7 @@ import com.igorganapolsky.vibratingwatchapp.classes.TimerViewModel
 
 
 /**
- * Creates a SetBuzzFragment that allows setting buzz for a timer
+ * A [Fragment] that allows the user to set buzz
  */
 class SetBuzzFragment : Fragment() {
     private lateinit var rootView: View
@@ -52,7 +49,8 @@ class SetBuzzFragment : Fragment() {
             val hours = String.format("%02d", timerModel.getTimer()!!.getHours())
             val minutes = String.format("%02d", timerModel.getTimer()!!.getMinutes())
             val seconds = String.format("%02d", timerModel.getTimer()!!.getSeconds())
-            tvTime.text = "$hours : $minutes : $seconds"
+            val time =  "$hours : $minutes : $seconds"
+            tvTime.text = time
         }
     }
 

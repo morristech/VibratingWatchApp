@@ -10,7 +10,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.RecyclerView
-import com.example.nbtk.slider.ScreenUtils
+import com.igorganapolsky.vibratingwatchapp.classes.ScreenUtils
 import com.igorganapolsky.vibratingwatchapp.R
 import com.igorganapolsky.vibratingwatchapp.adapters.SetRepeatSliderAdapter
 import com.igorganapolsky.vibratingwatchapp.SetRepeatSliderLayoutManager
@@ -18,7 +18,7 @@ import com.igorganapolsky.vibratingwatchapp.activities.TimersListActivity
 import com.igorganapolsky.vibratingwatchapp.classes.TimerViewModel
 
 /**
- * Creates a Fragment that allows setting time for a timer
+ * A [Fragment] that allows the user to set how many times this timer repeats.
  */
 class SetRepeatFragment : Fragment() {
 
@@ -29,9 +29,9 @@ class SetRepeatFragment : Fragment() {
     private lateinit var tvTime: TextView
     private var isFragmentStarted = false
     private var isFragmentVisible = false
-    lateinit var hours : String
-    lateinit var minutes : String
-    lateinit var seconds : String
+    private lateinit var hours : String
+    private lateinit var minutes : String
+    private lateinit var seconds : String
 
 
     override fun onStart() {
@@ -42,9 +42,9 @@ class SetRepeatFragment : Fragment() {
         }
     }
 
-    fun setTimer(){
-        timerModel = ViewModelProviders.of(activity!!).get(TimerViewModel::class.java!!)
-         hours = String.format("%02d", timerModel.getTimer()!!.getHours())
+    private fun setTimer(){
+        timerModel = ViewModelProviders.of(activity!!).get(TimerViewModel::class.java)
+        hours = String.format("%02d", timerModel.getTimer()!!.getHours())
         minutes = String.format("%02d", timerModel.getTimer()!!.getMinutes())
         seconds = String.format("%02d", timerModel.getTimer()!!.getSeconds())
         tvTime.text = "$hours : $minutes : $seconds"
