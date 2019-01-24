@@ -7,6 +7,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.wear.ambient.AmbientModeSupport
 import com.igorganapolsky.vibratingwatchapp.R
 
+/**
+ * Launcher activity for the timer app.
+ */
 class MainActivity : AppCompatActivity(), AmbientModeSupport.AmbientCallbackProvider {
 
     private lateinit var mAmbientController: AmbientModeSupport.AmbientController
