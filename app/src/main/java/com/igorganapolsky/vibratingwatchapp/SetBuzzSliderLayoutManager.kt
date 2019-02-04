@@ -65,9 +65,6 @@ class SetBuzzSliderLayoutManager(context: Context?) : LinearLayoutManager(contex
         }
     }
 
-    private fun getRecyclerViewCenterX() : Int {
-        return (recyclerView.right - recyclerView.left)/2 + recyclerView.left
-    }
 
     private fun getRecyclerViewCenterY() : Int {
         return (recyclerView.top - recyclerView.bottom)/2 + recyclerView.bottom

@@ -7,10 +7,10 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.igorganapolsky.vibratingwatchapp.R
-import org.w3c.dom.Text
+
 
 /**
- * Creates RecyclerView.Adapter for TimersListActivity recycle view
+ * Creates [RecyclerView.Adapter] for TimersListActivity recycle view that lets the user see all of their created timers in a list.
  */
 class TimersListAdapter(private val myDataset: Array<String>) :
     RecyclerView.Adapter<TimersListAdapter.TimersListViewHolder>() {

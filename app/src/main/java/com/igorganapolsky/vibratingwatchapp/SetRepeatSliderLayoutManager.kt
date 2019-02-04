@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 
 /**
- * Creates LinearLayoutManager for SetPicker recycle view
+ * Creates [LinearLayoutManager] for SetPicker RecyclerView that lets the user select a repeat cycle for this timer.
  */
 class SetRepeatSliderLayoutManager(context: Context?) : LinearLayoutManager(context) {
 

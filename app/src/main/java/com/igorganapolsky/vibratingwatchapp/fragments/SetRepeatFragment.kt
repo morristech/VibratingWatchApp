@@ -78,7 +78,7 @@ class SetRepeatFragment : Fragment() {
 
         // Setting the padding such that the items will appear in the middle of the screen
         val padding: Int = ScreenUtils.getScreenWidth(this.requireActivity())/2 - ScreenUtils.dpToPx(this.requireActivity(), 40)
-        rvRepeatPicker.setPadding(padding, 0, padding, 0)
+        rvRepeatPicker.setPadding(padding + 12, 0, padding, 0)
 
         // Setting layout manager
         rvRepeatPicker.layoutManager = SetRepeatSliderLayoutManager(this.requireActivity()).apply {

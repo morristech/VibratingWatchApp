@@ -29,7 +29,7 @@ class SetBuzzSliderAdapter : RecyclerView.Adapter<SetBuzzSliderItemViewHolder>()
     }
 
     override fun onBindViewHolder(holder: SetBuzzSliderItemViewHolder, position: Int) {
-        holder.tvItem?.text = position.toString()
+        holder.tvItem?.text = (position + 1).toString()
         holder.tvDescription?.text = data[position]
 
     }

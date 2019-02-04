@@ -7,6 +7,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.igorganapolsky.vibratingwatchapp.R
 import com.igorganapolsky.vibratingwatchapp.adapters.TimersListAdapter
 
+/**
+ * An [Activity] that lets the user see all of their created timers in a list.
+ */
 class TimersListActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var viewAdapter: RecyclerView.Adapter<*>

@@ -59,14 +59,13 @@ class SetBuzzFragment : Fragment() {
 
         // Setting the padding such that the items will appear in the middle of the screen
         val padding: Int = ScreenUtils.getScreenWidth(this.requireActivity())/2 - ScreenUtils.dpToPx(this.requireActivity(), 30)
-        rvBuzzPicker.setPadding(0, padding, 0, padding)
+        rvBuzzPicker.setPadding(0, padding - 40, 0, padding)
 
         // Setting layout manager
         rvBuzzPicker.layoutManager = SetBuzzSliderLayoutManager(this.requireActivity()).apply {
             callback = object : SetBuzzSliderLayoutManager.OnItemSelectedListener {
                 override fun onItemSelected(position: Int) {
                 }
-
             }
         }
 
